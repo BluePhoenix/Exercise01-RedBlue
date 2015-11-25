@@ -28,9 +28,18 @@ class Exercise01_RedBlueUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testElementsInitiallyDisplayed() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let app = XCUIApplication()
+        let hideRedBubbleButton = app.buttons["Hide Red Bubble"]
+        let hideBlueBubbleButton = app.buttons["Hide Blue Bubble"]
+        
+        XCTAssert(hideRedBubbleButton.hittable)
+        XCTAssert(hideBlueBubbleButton.hittable)
+        
+//        XCTAssert(app.images["Blue bubble"].hittable)
+//        XCTAssert(app.images["Red bubble"].hittable)
     }
     
 }
