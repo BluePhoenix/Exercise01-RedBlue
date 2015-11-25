@@ -28,12 +28,24 @@
                                 <animations/>
                                 <state key="normal" title="Hide Red Bubble"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue Bubble" translatesAutoresizingMaskIntoConstraints="NO" id="Skd-QS-tMU">
+                                <rect key="frame" x="117" y="42" width="66" height="66"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Red Bubble" translatesAutoresizingMaskIntoConstraints="NO" id="PLt-GQ-gDF">
+                                <rect key="frame" x="417" y="42" width="66" height="66"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="OT1-9o-EeJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="3:2" id="OC1-vU-uP7"/>
                             <constraint firstItem="ZYy-WY-Dmw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OWS-oh-VXq"/>
+                            <constraint firstItem="PLt-GQ-gDF" firstAttribute="centerX" secondItem="OT1-9o-EeJ" secondAttribute="centerX" id="S4w-i8-kgH"/>
+                            <constraint firstItem="Skd-QS-tMU" firstAttribute="centerX" secondItem="ZYy-WY-Dmw" secondAttribute="centerX" id="UBe-Lx-r4H"/>
+                            <constraint firstItem="Skd-QS-tMU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:4" id="eQG-Ym-1cT"/>
+                            <constraint firstItem="PLt-GQ-gDF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:4" id="fLd-Aj-Wns"/>
                             <constraint firstItem="OT1-9o-EeJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="k4k-FW-DIm"/>
                             <constraint firstItem="ZYy-WY-Dmw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1:2" id="mAI-n9-h1y"/>
                         </constraints>
@@ -43,4 +55,8 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Blue Bubble" width="66" height="66"/>
+        <image name="Red Bubble" width="66" height="66"/>
+    </resources>
 </document>

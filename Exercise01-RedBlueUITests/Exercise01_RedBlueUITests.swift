@@ -38,8 +38,8 @@ class Exercise01_RedBlueUITests: XCTestCase {
         XCTAssert(hideRedBubbleButton.hittable)
         XCTAssert(hideBlueBubbleButton.hittable)
         
-//        XCTAssert(app.images["Blue bubble"].hittable)
-//        XCTAssert(app.images["Red bubble"].hittable)
+        XCTAssert(app.images["Blue Bubble"].hittable)
+        XCTAssert(app.images["Red Bubble"].hittable)
     }
     
 }
