@@ -22,11 +22,17 @@
                                 <rect key="frame" x="91" y="285" width="118" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Hide Blue Bubble"/>
+                                <connections>
+                                    <action selector="hideBlueBubbleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KfU-hx-70T"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OT1-9o-EeJ">
                                 <rect key="frame" x="393" y="285" width="115" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Hide Red Bubble"/>
+                                <connections>
+                                    <action selector="hideRedBubbleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K8H-ef-msv"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue Bubble" translatesAutoresizingMaskIntoConstraints="NO" id="Skd-QS-tMU">
                                 <rect key="frame" x="117" y="42" width="66" height="66"/>
@@ -50,6 +56,12 @@
                             <constraint firstItem="ZYy-WY-Dmw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1:2" id="mAI-n9-h1y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueBubbleImage" destination="Skd-QS-tMU" id="pN2-mP-luc"/>
+                        <outlet property="hideBlueBubbleButton" destination="ZYy-WY-Dmw" id="Xrh-Dq-6OD"/>
+                        <outlet property="hideRedBubbleButton" destination="OT1-9o-EeJ" id="fUU-S7-OmZ"/>
+                        <outlet property="redBubbleImage" destination="PLt-GQ-gDF" id="efZ-y1-RoS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -42,4 +42,25 @@ class Exercise01_RedBlueUITests: XCTestCase {
         XCTAssert(app.images["Red Bubble"].hittable)
     }
     
+    func testBubblesCanBeHidden() {
+        let app = XCUIApplication()
+        let hideRedBubbleButton = app.buttons["Hide Red Bubble"]
+        let hideBlueBubbleButton = app.buttons["Hide Blue Bubble"]
+        let blueBubbleImage = app.images["Blue Bubble"]
+        let redBubbleImage = app.images["Red Bubble"]
+        
+        hideRedBubbleButton.tap()
+        XCTAssertFalse(hideRedBubbleButton.hittable)
+        XCTAssertFalse(redBubbleImage.hittable)
+        
+        XCTAssert(hideBlueBubbleButton.hittable)
+        XCTAssert(blueBubbleImage.hittable)
+        
+        hideBlueBubbleButton.tap()
+        XCTAssertFalse(hideRedBubbleButton.hittable)
+        XCTAssertFalse(redBubbleImage.hittable)
+        
+        XCTAssertFalse(hideBlueBubbleButton.hittable)
+        XCTAssertFalse(blueBubbleImage.hittable)
+    }
 }
